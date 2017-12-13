@@ -1,0 +1,187 @@
+/*Начало кода проекта DevShots*/
+html {
+  background: #ECECEC;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  padding: 10px 0;
+}
+
+/*Грид область*/
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px 20px;  /*расстояния между карточками*/ 
+    background-color: none;
+    /* то же, что и:
+        grid-row-gap: 20px; 
+        grid-column-gap: 20px;*/
+}
+
+
+/* ПЕРВАЯ строка карточек - разметка*/
+@media only screen and (min-width: 500px) {
+.band {
+  grid-template-columns: repeat(2, 1fr); /* то же, что и: 1fr 1fr;*/
+  }  
+  .item-0 {
+    grid-column: 1/ span 3;
+  }
+}
+
+/* ВТОРАЯ строка карточек - разметка*/
+@media only screen and (min-width: 500px) {
+.band {
+  grid-template-columns: repeat(2, 1fr); /* то же, что и: 1fr 1fr;*/
+  }  
+  .item-1 {
+    grid-column: 1/ span 2;
+  }
+}
+
+/* ТРЕТЬЯ и далее строки карточек - разметка */
+@media only screen and (min-width: 850px) {
+.band {
+  grid-template-columns: repeat(3, 1fr); /* то же, что и: 1fr 1fr 1fr 1fr;*/
+  }
+}
+
+.item {
+    grid-column: 2;
+    grid-column-span: 3;
+    grid-row: 2;
+    grid-row-span:2;
+}
+
+
+.card {
+  background: white;
+  /*border-radius: 1em; скругляет только НИЖНИЙ-видимый край!*/
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+/*Добавка position: relative; и transition, чтобы двигать карточку при наведении мыши:*/  
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+/*При указании/проходе курсора мыши*/
+.card:hover {
+  top: -2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+/*фоновый рисунок карты*/
+.card .thumb {
+  padding-bottom: 40%;
+  background-size: cover;
+  opacity: 0.7;
+  background-position: center center;
+}
+
+/*Добавка базовых стилей для шрифтов, чтобы менялся цвет и отступы.*/
+.card article {
+  padding: 20px;
+}
+
+/* шрифты */
+.decor-text {
+  text-shadow: 2px 2px 4px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font: 1em 'Roboto', sans-serif; /*Georgia, serif;*/
+}
+
+.card h1 {
+  font-size: 20px;
+  margin: 0;
+  /*color: #333;*/
+}
+
+.card p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+.card article {
+  padding: 20px;
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/*-Menu start-------------*/
+* {box-sizing: border-box; margin: 0;}
+.Menu {
+  padding: 20px 30px;
+  background: white;
+  /*position: fixed;
+  z-index:10;*/
+  font-family: 'Roboto', sans-serif;
+}
+.Menu-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #b99d61;
+}
+.Menu-list {
+  padding: 0;
+  list-style: none;
+}
+.Menu-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.Menu-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .1s linear;
+}
+.Menu-list a:hover {color: red;}
+/*adaptive menu option*/
+/*-Menu finish-------------*/
+
+.Content {
+  max-width:1600px;
+  max-height:500px;
+  min-width:20px;
+  min-height:100px;
+  background-color: #959688;
+  position: relative;
+}
+
+.form-group {
+  max-width:200px;
+  max-height:50px;
+  min-width:50px;
+  min-height:50px;
+  background-color: lime;
+  position: relative;
+}

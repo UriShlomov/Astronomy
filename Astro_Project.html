@@ -1,0 +1,368 @@
+<!--
+    Header:
+     Navigate 
+      [Menu:"about,lectures,parking,registrate,information,about us"]
+      [color: 1.black(#29292C),2.ellow,3.white(#ECECEC)]
+      [x3 Pictures]
+
+      Main: 
+      [main area/ grid: 3x2]
+      [map area/ grid: 2x1]
+      [registration/ 5 fields:"Name,Position,Organisation,Phone num,Friends, + send-button"]
+
+    Footer:
+      ["about us"]
+
+    Colors: (по порядку страницы сверху вниз)
+     -Background colors
+      1.black     (#29292C)
+      2.gray      (#949381)
+      3.lightgray (#626358)
+      4.light     (#ECECEC)
+      5.light2    (#DCDCDC)
+      6.gray2     (#959688)
+      7.white     (#ECECEC)
+      8.black2    (#292929)
+      9.black3    (#212121)
+
+     -Text color  black(#29292C)
+
+    Pictures:
+      Logo (<a href="xxx.png" </a>) height150px width150px()
+
+    Fonts: 
+      Eng(<a href="") 
+      Heb(<a href="")
+
+    Links:
+      Information [grid: 5x2]  
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project: Solar System</title>
+  <script src="путь к файлу с jQuery"></script>       <!--jQuery-->
+  <link href="Astro_Project.css" rel="stylesheet"> <!--CSS-->
+  <script src="Astro_Project.js"></script>         <!--JavaScript-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--mobile optimization-->
+</head>
+
+<body>
+
+  <div class="Header">
+    <h3>
+      <strong>Solar system family</strong>
+    </h3>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/JmlmLuSQiSk?ecver=1" frameborder="0" allowfullscreen></iframe>
+
+    <nav class="Menu">
+      <h3 class="Menu-title">Space Navigator</h3>
+      <ul class="Menu-list">
+        <ul>
+          <li>
+            <a href="#">About </a>
+          </li>
+          <li>
+            <a href="#">Lectures </a>
+          </li>
+          <li>
+            <a href="#">Sun </a>
+          </li>
+          <li>
+            <a href="#">Planets </a>
+          </li>
+          <ul>
+            <li>
+              <a href="#">Inner Planets</a>
+            </li>
+            <ul>
+              <li>
+                <a href="#">Mercury</a>
+              </li>
+              <li>
+                <a href="#">Venus </a>
+              </li>
+              <li>
+                <a href="#">Earth </a>
+              </li>
+            </ul>
+            <li>
+              <a href="#">Outer Planets</a>
+            </li>
+            <ul>
+              <li>
+                <a href="#">Mars </a>
+              </li>
+              <li>
+                <a href="#">Jupiter</a>
+              </li>
+              <li>
+                <a href="#">saturn </a>
+              </li>
+              <li>
+                <a href="#">Uranus </a>
+              </li>
+              <li>
+                <a href="#">Neptune</a>
+              </li>
+              <li>
+                <a href="#">Pluto </a>
+              </li>
+            </ul>
+          </ul>
+          <li>
+            <a href="#">Registrate </a>
+          </li>
+          <li>
+            <a href="#">Information</a>
+          </li>
+          <li>
+            <a href="#">About us </a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+  <br>
+
+  <div class="support-grid"></div>
+  <div class="band">
+
+    <!-- grid item, containing a card -->
+    <div class="item-0">
+      <!-- Family -->
+      <a href="https://i.ytimg.com/vi/yYafbcgsX68/maxresdefault.jpg" class="card">
+        <div class="thumb" style="background-image:  
+              url(https://i.ytimg.com/vi/yYafbcgsX68/maxresdefault.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Solar system family</h1>
+          <span>Solar system comparison size</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-1">
+      <!-- Sun -->
+      <a href="https://www.mindmeister.com/images/download/22040693" class="card">
+        <div class="thumb" style="background-image:
+            url(https://www.mindmeister.com/images/download/22040693);">
+         
+        </div>
+        <article>
+          <h1 class="decor-text">Sun</h1>
+          <span>Star (Solar system center)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-2">
+      <!-- Mercury -->
+      <a href="https://cdn.pixabay.com/photo/2015/06/26/18/48/mercury-822825_960_720.png" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2015/06/26/18/48/mercury-822825_960_720.png);">
+        </div>
+        <article>
+          <h1 class="decor-text">Mercury</h1>
+          <span>Planet #1 (Inner Planetary Group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-3">
+      <!-- Venus -->
+      <a href="https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_960_720.jpg);">
+       </div>
+        <article>
+          <h1 class="decor-text">Venus</h1>
+          <span>Planet #2 (Inner Planetary Group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-4">
+      <!-- Earth -->
+      <a href="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_960_720.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Earth</h1>
+          <span>Planet #3 (Our home)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-5">
+      <!-- Moon -->
+      <a href="https://cdn.pixabay.com/photo/2016/11/29/13/14/astronomy-1869760_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2017/07/30/01/47/image-2553230_960_720.jpg);">  
+       </div>
+        <article>
+          <h1 class="decor-text">Moon</h1>
+          <span>Planet (Earth`s satellite)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-6">
+      <!-- Mars -->
+      <a href="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_960_720.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Mars</h1>
+          <span>Planet #4 (Outer planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-7">
+      <!-- Jupiter -->
+      <a href="https://cdn.pixabay.com/photo/2017/02/14/00/31/astronomy-2064276_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2017/02/14/00/31/astronomy-2064276_960_720.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Jupiter</h1>
+          <span>Planet #5 (Outer Planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-8">
+      <!-- Saturn -->
+      <a href="https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_960_720.jpg);">  
+        </div>
+        <article>
+          <h1 class="decor-text">Saturn</h1>
+          <span>Planet #6 (Outer Planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-9">
+      <!-- Uranus -->
+      <a href="https://cdn.pixabay.com/photo/2012/01/09/10/56/uranus-11625_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2012/01/09/10/56/uranus-11625_960_720.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Uranus</h1>
+          <span>Planet #7 (Outer Planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-10">
+      <!-- Neptune -->
+      <a href="https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_960_720.jpg);">
+        </div>
+        <article>
+          <h1 class="decor-text">Neptune</h1>
+          <span>Planet #8 (Outer Planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+
+    <div class="item-11">
+      <!-- Pluto -->
+      <a href="https://cdn.pixabay.com/photo/2016/04/07/23/11/pluto-1315109_960_720.jpg" class="card">
+        <div class="thumb" style="background-image:
+          url(https://cdn.pixabay.com/photo/2016/04/07/23/11/pluto-1315109_960_720.jpg);">   
+        </div>
+        <article>
+          <h1 class="decor-text">Pluto</h1>
+          <span>Planet #9 (Outer Planetary group)</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+            Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies.</p>
+        </article>
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <section>
+    <div class="Content">
+      <article>
+        <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eleifend odio. Maecenas luctus efficitur congue.
+          Donec eu faucibus diam. Pellentesque molestie eros ut justo congue, sed sagittis ex ultricies. Ut quis sapien eleifend,
+          euismod erat varius, semper ligula. Cras facilisis pulvinar consectetur. Duis a sem sed leo faucibus malesuada.
+          Aenean accumsan purus vitae semper sodales. Phasellus volutpat elementum nulla, id lacinia nunc egestas ut. Cras
+          interdum ac eros et congue. Integer sem libero, sagittis in velit vitae, commodo molestie ligula.666</em>
+      </article>
+    </div>
+  </section>
+  <br>
+
+  <!-- form content -->
+  <section>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputName">Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPosition">Position</label>
+        <input type="text" class="form-control" id="exampleInputPosition" placeholder="Position">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputOrganisation">Organisation</label>
+        <input type="text" class="form-control" id="exampleInputOrganisation" placeholder="Organisation">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPhone">Phone number</label>
+        <input type="number" class="form-control" id="exampleInputPhone" placeholder="Phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </section>
+  <br>
+  <br>
+
+  <!-- footer content -->
+  <div class="Footer"></div>
+  <!--<a id="toTop" class="show">▲</a> стрелка возврата вверх-->
+
+</body>
+
+</html>
